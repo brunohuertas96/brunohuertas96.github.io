@@ -18,7 +18,10 @@
 
 </head>
 <body>
-
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <a href="http://bit.ly/smilefactory-reservas" class="float" target="_blank">
+   <i class="fa fa-whatsapp my-float"></i>
+   </a>
 <!-- header section starts  -->
 
 <header class="header fixed-top">
@@ -34,7 +37,7 @@
             <a href="#about">Quienes somos?</a>
             <a href="#services">Servicios</a>
             <a href="#reviews">Reviews</a>
-            <a href="#contact">Contáctanos</a>
+            <a href="#process">Agendate ahora</a>
          </nav>
 
          <a href="http://bit.ly/smilefactory-reservas" class="link-btn">  Contactanos</a>
@@ -57,8 +60,8 @@
 
       <div class="row min-vh-100 align-items-center">
          <div class="content text-center text-md-left">
-            <h3>Permítenos fabricar una sonrisa más brillante.</h3>
-            <p>SmileFactory puede ayudarlo a optener la sonrisa que siempre ha deseado. Especialistas en ortodoncia, armonización facial.</p>
+            <h3>EXPERTOS EN FABRICAR SONRISAS MÁS BRILLANTES</h3>
+            <p>ESmileFactory puede ayudarlo a optener la sonrisa que siempre ha deseado. Especialistas en ortodoncia, armonización facial.</p>
             <a href="http://bit.ly/smilefactory-reservas" class="link-btn"> <img src="images/whatsapp.png" alt=""> Reserva tu cita </a>
          </div>
       </div>
@@ -100,13 +103,14 @@
 
 <section class="services" id="services">
 
-   <h1 class="heading">our services</h1>
+   <h1 class="heading">Nuestros Servicios</h1>
 
    <div class="box-container container">
 
       <div class="box">
          <img src="images/icon-1.svg" alt="">
-         <h3>Alignment specialist</h3>
+         <h3>Ortodoncia</h3>
+         <p>Cosmetic dentistry includes teeth whitening, dental implants, dental crowns, and teeth shaping.</p>
       </div>
 
       <div class="box">
@@ -142,9 +146,9 @@
 
 <!-- process section starts  -->
 
-<section class="process">
+<section class="process" id="process">
 
-   <h1 class="heading">work process</h1>
+   <h1 class="heading">Agenda tu cita</h1>
 
    <div class="box-container container">
 
@@ -155,16 +159,13 @@
       </div>
 
       <div class="box">
-         <img src="images/process-2.png" alt="">
-         <h3>Pediatric Dentistry</h3>
-         <p>Padiatric dentistry include stainless steel crowns, tooth-colored fillings, dental cleanings, and cavities.</p>
+         <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/bruno-huertas96/15min" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
       </div>
 
-      <div class="box">
-         <img src="images/process-3.png" alt="">
-         <h3>Dental Implants</h3>
-         <p>Dental implants are artificial tooth roots that are surgically placed into the jawbone.</p>
-      </div>
+    
 
    </div>
 
@@ -229,31 +230,6 @@
 <!-- reviews section ends -->
 
 <!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-   <h1 class="heading">make appointment</h1>
-
-   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-      <!--<?php
-         if(isset($message)){
-            foreach($message as $message){
-               echo '<p class="message">'.$message.'</p>';
-            }
-         }
-      ?>-->
-      <span>Enter your name :</span>
-      <input type="text" name="name" placeholder="Enter your name" class="box" required>
-      <span>Enter your email :</span>
-      <input type="email" name="email" placeholder="Enter your email" class="box" required>
-      <span>Enter your number :</span>
-      <input type="number" name="number" placeholder="Enter your number" class="box" required>
-      <span>Enter appointment date :</span>
-      <input type="datetime-local" name="date" class="box" required>
-      <input type="submit" value="make appointment" name="submit" class="link-btn">
-   </form>
-
-</section>
 
 <!-- contact section ends -->
 
