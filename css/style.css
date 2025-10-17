@@ -469,4 +469,100 @@ section{
       font-size: 3rem;
    }
 
+
 }
+
+/* Hero refinado */
+.hero-title{
+  font-size: clamp(29px, 4.2vw, 42px);
+  line-height: 1.15;
+  color:#006DAF; /* tu azul */
+  font-weight: 800;
+  text-transform: none;
+}
+.hero-lead{
+  margin: 8px 0 0;
+  font-size: clamp(15px, 1.6vw, 18px);
+  color:#334155;
+  line-height: 1.7;
+}
+.hero-note{
+  font-size: 1.35rem;
+  color:#475569;
+}
+.hero-note i{ color:#22c55e; margin-right:.4rem }
+
+/* Badges de confianza */
+.hero-badges{ display:flex; flex-wrap:wrap; gap:.6rem }
+.badge-pill{
+  display:inline-block; padding:.45rem .9rem; border-radius:999px;
+  background:#e8f3ff; color:#0f3a68; font-weight:700; font-size:1.2rem;
+}
+
+/* Botones: reutiliza .link-btn y da variantes */
+.gap-12{ gap:12px }
+.btn-whatsapp{
+  display:inline-flex; align-items:center; gap:.6rem;
+}
+.btn-tiktok{
+  display:inline-flex; align-items:center; gap:.6rem;
+  background:#000 !important; /* variante negra */
+}
+
+/* Video responsive (vertical u horizontal) */
+.video-frame{
+  position: relative; width:100%;
+  border-radius: 16px; overflow:hidden;
+  box-shadow: 0 10px 30px rgba(16,24,40,.12);
+  background:#000;
+  /* Aspecto: si tu video es vertical 9:16, usa 177.77% */
+  padding-top: 100%; /* 16:9 por defecto */
+}
+.video-frame video{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+}
+
+/* Ajustes móviles */
+@media (max-width:768px){
+  .hero-title{ 
+   text-align:left;
+   padding-top: 90px/* o el alto real de tu header + un poco de respiro */
+  }
+}
+
+
+.sede-card {
+  background:#fff;
+  padding:1.5rem;
+  border-radius:16px;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+.sede-card .section-title {
+  font-size:1.4rem;
+  color:#3a73c1;
+  font-weight:700;
+}
+
+.map-wrap {
+  position:relative;
+  width:100%;
+  padding-top:56.25%;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 8px 24px rgba(0,0,0,.1);
+}
+
+.map-embed {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+.gap-12 { gap:12px; }
