@@ -1,415 +1,775 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- ============ SEO ============ -->
+   <title>Dentista en Surco, Miraflores y San Borja | Digital Smiles - Ortodoncia Digital en Lima</title>
+   <meta name="description" content="Clínica dental en Lima con 3 sedes: Surco, Miraflores y San Borja. Ortodoncia digital, brackets, alineadores invisibles, blanqueamiento, implantes y odontopediatría. Agenda tu cita por WhatsApp.">
+   <meta name="keywords" content="dentista en Surco, dentista en Miraflores, dentista en San Borja, clínica dental Lima, ortodoncia Lima, brackets Lima, alineadores invisibles Lima, blanqueamiento dental Lima">
+   <link rel="canonical" href="https://www.digitalsmiles.pe/">
+
+   <!-- Open Graph (compartir en redes / WhatsApp) -->
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="Digital Smiles | Ortodoncia Digital en Lima - Surco, Miraflores y San Borja">
+   <meta property="og:description" content="Transforma tu sonrisa con tecnología digital 3D. Brackets, alineadores invisibles, blanqueamiento e implantes. Agenda por WhatsApp.">
+   <meta property="og:image" content="https://www.digitalsmiles.pe/images/logo-ok.png">
+   <meta property="og:locale" content="es_PE">
+
+   <!-- Fuentes -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Digital Smiles By Dra Milagros</title>
 
-   <!-- font awesome cdn link  -->
+   <!-- Font Awesome 6 (única versión) -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-   <!-- bootstrap cdn link  -->
+   <!-- Bootstrap -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
 
-   <!-- custom css file link  -->
+   <!-- CSS propio -->
    <link rel="stylesheet" href="css/style.css">
-   <link rel="icon" href="images/favixon.png"/>
+   <link rel="icon" href="images/favixon.png">
 
+   <!-- ============ Datos estructurados: 3 sedes (SEO local) ============ -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@graph": [
+       {
+         "@type": "Dentist",
+         "name": "Digital Smiles - Sede Surco",
+         "image": "https://www.digitalsmiles.pe/images/logo-ok.png",
+         "url": "https://www.digitalsmiles.pe/#sede-surco",
+         "telephone": "+51960116876",
+         "address": {
+           "@type": "PostalAddress",
+           "streetAddress": "Av. Alfredo Benavides 3746, 2do Piso",
+           "addressLocality": "Santiago de Surco",
+           "addressRegion": "Lima",
+           "addressCountry": "PE"
+         },
+         "geo": { "@type": "GeoCoordinates", "latitude": -12.129505, "longitude": -76.997247 },
+         "openingHoursSpecification": {
+           "@type": "OpeningHoursSpecification",
+           "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+           "opens": "10:00", "closes": "20:00"
+         },
+         "priceRange": "$$",
+         "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "246" },
+         "sameAs": ["https://www.instagram.com/digitalsmiles.pe/","https://www.tiktok.com/@dramilagroslopez"]
+       },
+       {
+         "@type": "Dentist",
+         "name": "Digital Smiles - Sede Miraflores",
+         "image": "https://www.digitalsmiles.pe/images/logo-ok.png",
+         "url": "https://www.digitalsmiles.pe/#sede-miraflores",
+         "telephone": "+51960116876",
+         "address": {
+           "@type": "PostalAddress",
+           "streetAddress": "Av. Reducto 929",
+           "addressLocality": "Miraflores",
+           "addressRegion": "Lima",
+           "addressCountry": "PE"
+         },
+         "geo": { "@type": "GeoCoordinates", "latitude": -12.127995, "longitude": -77.023832 },
+         "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "137" },
+         "openingHoursSpecification": {
+           "@type": "OpeningHoursSpecification",
+           "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+           "opens": "10:00", "closes": "20:00"
+         },
+         "priceRange": "$$"
+       },
+       {
+         "@type": "Dentist",
+         "name": "Digital Smiles - Sede San Borja",
+         "image": "https://www.digitalsmiles.pe/images/logo-ok.png",
+         "url": "https://www.digitalsmiles.pe/#sede-sanborja",
+         "telephone": "+51960116876",
+         "address": {
+           "@type": "PostalAddress",
+           "streetAddress": "Av. Primavera 939",
+           "addressLocality": "San Borja",
+           "addressRegion": "Lima",
+           "addressCountry": "PE"
+         },
+         "geo": { "@type": "GeoCoordinates", "latitude": -12.110107, "longitude": -76.982777 },
+         "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "30" },
+         "openingHoursSpecification": {
+           "@type": "OpeningHoursSpecification",
+           "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+           "opens": "10:00", "closes": "20:00"
+         },
+         "priceRange": "$$"
+       }
+     ]
+   }
+   </script>
 </head>
 <body>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-   <a href="https://api.whatsapp.com/send?phone=51932335257&text=Hola,vengo%20de%20la%20web,%20me%20gustar%C3%ADa%20reservar%20una%20cita." class="float" target="_blank">
-   <i class="fa fa-whatsapp my-float"></i>
-   </a>
 
-<!-- header section starts  -->
+<!-- Botón flotante de WhatsApp -->
+<a href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20vengo%20de%20la%20web%20y%20quiero%20reservar%20una%20cita%20%F0%9F%98%8A"
+   class="float" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+   <i class="fa-brands fa-whatsapp my-float"></i>
+</a>
 
+<!-- ============ HEADER ============ -->
 <header class="header fixed-top">
-
    <div class="container">
-
       <div class="row align-items-center justify-content-between">
-
-         <div id="menu-btn" class="fas fa-bars" style="font-size:24px" ></div>
-          <a href="#home" class="logo" style="margin-right: 20px;"><img src="images/logo-ok.png"  width="150" height="100" alt=""><span></span></a>
+         <div id="menu-btn" class="fas fa-bars" style="font-size:24px"></div>
+         <a href="#home" class="logo" style="margin-right: 20px;"><img src="images/logo-ok.png" width="150" height="100" alt="Digital Smiles - Clínica dental en Lima"><span></span></a>
 
          <nav class="nav">
             <a href="#home">Inicio</a>
-            <a href="#about">¿Quiénes somos?</a>
-            <!--  <a href="#reviews">Reviews</a>  -->
-
+            <a href="#tratamientos">Tratamientos</a>
             <a href="#testimonios">Testimonios</a>
             <a href="#sedes">Sedes</a>
-            <a href="#services">Especialidades</a>
-
+            <a href="#about">Nosotros</a>
+            <a href="#faq">Preguntas</a>
          </nav>
-         <a href="https://api.whatsapp.com/send?phone=51932335257&text=Hola,vengo%20de%20la%20web,%20me%20gustar%C3%ADa%20reservar%20una%20cita." class="link-btn">  Reservar Cita </a>
-         
 
+         <div class="header-cta">
+            <a href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20vengo%20de%20la%20web%20y%20quiero%20reservar%20una%20cita%20%F0%9F%98%8A"
+               class="header-phone" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp al 960 116 876">
+               <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+               <span class="header-phone-text">
+                  <small>WhatsApp</small>
+                  <strong>960 116 876</strong>
+               </span>
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20vengo%20de%20la%20web%20y%20quiero%20reservar%20una%20cita%20%F0%9F%98%8A"
+               class="link-btn header-book" target="_blank" rel="noopener">
+               <i class="fa-regular fa-calendar-check" aria-hidden="true"></i> Reservar Cita
+            </a>
+         </div>
       </div>
-
    </div>
-
 </header>
 
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
+<!-- ============ HERO ============ -->
 <section class="home" id="home" style="padding-top: 26px; padding-bottom: 0px;">
-
    <div class="container">
-  <div class="row min-vh-100 align-items-center">
-    <!-- Columna texto -->
-    <div class="col-md-6">
-      <div class="hero-badges mb-3">
-        <span class="badge-pill">Ortodoncia digital</span>
-        <span class="badge-pill">Planificación digital</span>
-        <span class="badge-pill">Tecnología 3D</span>
+      <div class="row min-vh-100 align-items-center">
+
+         <div class="col-md-6">
+            <div class="hero-badges mb-3">
+               <span class="badge-pill">Ortodoncia digital</span>
+               <span class="badge-pill">Escáner 3D</span>
+               <span class="badge-pill">3 sedes en Lima</span>
+            </div>
+
+            <h1 class="hero-title">Ortodoncia Digital en Lima: transforma tu sonrisa con brackets o alineadores invisibles</h1>
+
+            <p class="hero-lead">
+               <strong>+1,000 pacientes felices</strong> en nuestras 3 sedes:
+               <strong>Surco, Miraflores y San Borja</strong>. Evaluación con escáner digital 3D,
+               Atención de lunes a sábado hasta las 8&nbsp;pm.
+            </p>
+
+            <div class="d-flex flex-wrap gap-12 mt-3">
+               <a href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20vengo%20de%20la%20web%20y%20quiero%20reservar%20una%20evaluaci%C3%B3n%20%F0%9F%98%8A"
+                  class="link-btn btn-whatsapp" target="_blank" rel="noopener"
+                  aria-label="Reservar cita por WhatsApp">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                  <span>Agenda tu cita por WhatsApp</span>
+               </a>
+
+               <a href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20vengo%20de%20la%20web%20y%20quiero%20informaci%C3%B3n%20sobre%20alineadores%20invisibles%20%F0%9F%98%81"
+                  class="link-btn btn-align" target="_blank" rel="noopener"
+                  aria-label="Consultar por alineadores invisibles por WhatsApp">
+                  <i class="fa-solid fa-tooth" aria-hidden="true"></i>
+                  <span>Alineadores invisibles</span>
+               </a>
+
+               <a href="#sedes" class="link-btn btn-outline" aria-label="Ver nuestras sedes">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  <span>Ver sedes</span>
+               </a>
+            </div>
+
+            <p class="hero-note mt-3">
+               <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+               Evaluación personalizada y plan a tu medida.
+            </p>
+
+            <div class="hero-rating mt-2">
+               <span class="stars-gold" aria-hidden="true">★★★★★</span>
+               <span><strong>4.9</strong> en Google · +400 reseñas en nuestras 3 sedes</span>
+            </div>
+         </div>
+
+         <div class="col-md-6 mt-4 mt-md-0">
+            <div class="video-frame" aria-label="Video de presentación de Digital Smiles">
+               <video controls playsinline preload="none" poster="images/video-cover.jpg">
+                  <source src="images/video-parte1.mp4" type="video/mp4">
+               </video>
+            </div>
+         </div>
+
       </div>
-
-      <h1 class="hero-title">Hacemos realidad la sonrisa en la que estás pensando</h1>
-
-      <p class="hero-lead">
-        En <strong>Digital Smiles</strong> combinamos calidez humana y tecnología para
-        tratamientos de <strong>ortodoncia</strong>, <strong>estética dental</strong>,
-        <strong>implantes</strong> y más. Más de <strong>1000 pacientes</strong> nos
-        recomiendan por resultados y experiencia.
-      </p>
-
-      <div class="d-flex flex-wrap gap-12 mt-3">
-        <a
-          href="https://api.whatsapp.com/send?phone=51973759251&text=Hola,vengo%20de%20la%20web,%20me%20gustar%C3%ADa%20reservar%20una%20cita."
-          class="link-btn btn-whatsapp"
-          target="_blank" rel="noopener"
-          aria-label="Reservar cita por WhatsApp"
-        >
-          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-          <span>Reserva tu cita</span>
-        </a>
-
-        <a
-          href="https://www.tiktok.com/@dramilagroslopez"
-          class="link-btn btn-tiktok"
-          target="_blank" rel="noopener"
-          aria-label="Ver TikTok de la Dra. Milagros López"
-        >
-          <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-          <span>@dramilagroslopez</span>
-        </a>
-      </div>
-
-      <p class="hero-note mt-3">
-        <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
-        Evaluación personalizada y plan a tu medida.
-      </p>
-    </div>
-
-    <!-- Columna video -->
-    <div class="col-md-6 mt-4 mt-md-0">
-      <div class="video-frame" aria-label="Video de presentación">
-        <video controls playsinline preload="metadata" poster="images/video-cover.jpg">
-          <source src="images/video-parte1.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+   </div>
 </section>
 
-<!-- home section ends -->
+<!-- ============ BARRA DE CONFIANZA ============ -->
+<section class="trustbar" aria-label="Razones para confiar en Digital Smiles">
+   <div class="container trustbar-grid">
+      <div class="trust-item"><i class="fas fa-users"></i><span>+1,000 pacientes atendidos</span></div>
+      <div class="trust-item"><i class="fas fa-map-marker-alt"></i><span>3 sedes en Lima</span></div>
+      <div class="trust-item"><i class="fas fa-cube"></i><span>Tecnología digital 3D</span></div>
+      <div class="trust-item"><i class="fas fa-credit-card"></i><span>Facilidades de pago</span></div>
+   </div>
+</section>
 
-<!-- about section starts  -->
+<!-- ============ TRATAMIENTOS ============ -->
+<section class="services" id="tratamientos">
+   <h2 class="heading">Tratamientos dentales en Lima</h2>
+   <p class="section-sub">Atendemos en Surco, Miraflores y San Borja.</p>
 
-<section class="about" id="about">
+   <div class="box-container container">
 
-   <div class="container">
+      <div class="box treatment">
+         <img src="images/icon-brackets.svg" alt="Ortodoncia con brackets en Lima">
+         <h3>Ortodoncia con brackets</h3>
+         <p>Brackets metálicos, estéticos o autoligables con planificación 100% digital para resultados más rápidos y precisos.</p>
+         <a class="link-btn btn-card" target="_blank" rel="noopener"
+            href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20ortodoncia%20con%20brackets">
+            <i class="fa-brands fa-whatsapp"></i> Cotizar mis brackets
+         </a>
+      </div>
 
-      <div class="row align-items-center">
+      <div class="box treatment">
+         <img src="images/icon-alineadores.svg" alt="Alineadores invisibles en Lima">
+         <h3>Alineadores invisibles</h3>
+         <p>Corrige tu sonrisa sin que nadie lo note. Removibles, cómodos y diseñados a tu medida con tecnología 3D.</p>
+         <a class="link-btn btn-card" target="_blank" rel="noopener"
+            href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20vengo%20de%20la%20web%20y%20quiero%20informaci%C3%B3n%20sobre%20alineadores%20invisibles%20%F0%9F%98%81">
+            <i class="fa-brands fa-whatsapp"></i> Quiero alineadores
+         </a>
+      </div>
 
-         <div class="col-md-6 image">
-            <img src="images/about-img.jpg" class="w-100 mb-5 mb-md-0" alt="">
-         </div>
+      <div class="box treatment">
+         <img src="images/icon-blanqueamiento.svg" alt="Blanqueamiento dental en Lima">
+         <h3>Blanqueamiento dental</h3>
+         <p>Dientes más blancos desde la primera sesión con protección de encías y sin dolor.</p>
+         <a class="link-btn btn-card" target="_blank" rel="noopener"
+            href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20blanqueamiento%20dental">
+            <i class="fa-brands fa-whatsapp"></i> Reservar blanqueamiento
+         </a>
+      </div>
 
-         <div class="col-md-6 content">
-            <span>Sobre Nosotros</span>
-            <h3>EXPERIENCIA ÚNICA</h3>
+      <div class="box treatment">
+         <img src="images/icon-limpieza.svg" alt="Limpieza dental y profilaxis en Lima">
+         <h3>Limpieza dental / Profilaxis</h3>
+         <p>Elimina sarro y manchas en 30–40 minutos. Previene caries y cuida tus encías. Recomendada cada 6 meses.</p>
+         <a class="link-btn btn-card" target="_blank" rel="noopener"
+            href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20quiero%20agendar%20una%20limpieza%20dental">
+            <i class="fa-brands fa-whatsapp"></i> Agendar mi limpieza
+         </a>
+      </div>
 
-            <p>"En busca de atención dental especializada y de primera calidad centrada en tu bienestar? ¡Has llegado al lugar indicado! En Digital Smiles, nuestro equipo especializado se dedica a comprender tus necesidades y superar tus expectativas. Nos tomamos el tiempo para conversar contigo y entender tus objetivos. Nuestra misión es que cada visita se convierta en una experiencia que te haga sonreír. Estamos a la vanguardia de la odontología digital, utilizando tecnología de punta para brindarte tu mejor sonrisa"</p>
-            <h4>Dra Milagros Lopez Espinoza (Directora Clínica - Digital Smiles S.A.C)</h4>
-            <br>
-            <a href="https://api.whatsapp.com/send?phone=51973759251&text=Hola,vengo%20de%20la%20web,%20me%20gustar%C3%ADa%20reservar%20una%20cita." class="link-btn">  Reserva tu cita</a>
-         </div>
+      <div class="box treatment">
+         <img src="images/icon-implante.svg" alt="Implantes dentales en Lima">
+         <h3>Implantes dentales</h3>
+         <p>Recupera tus dientes con implantes de titanio y planificación guiada en 3D. Vuelve a comer y sonreír con seguridad.</p>
+         <a class="link-btn btn-card" target="_blank" rel="noopener"
+            href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20quiero%20una%20evaluaci%C3%B3n%20para%20implantes%20dentales">
+            <i class="fa-brands fa-whatsapp"></i> Evaluar mi caso
+         </a>
+      </div>
 
+      <div class="box treatment">
+         <img src="images/icon-endodoncia.svg" alt="Endodoncia y curaciones dentales en Lima">
+         <h3>Endodoncia y curaciones</h3>
+         <p>Elimina el dolor y salva tu diente con tratamiento de conducto moderno. Endodoncia en una sola cita.</p>
+         <a class="link-btn btn-card" target="_blank" rel="noopener"
+            href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20tengo%20dolor%20dental%20y%20quiero%20una%20cita">
+            <i class="fa-brands fa-whatsapp"></i> Tengo dolor, quiero cita
+         </a>
+      </div>
+
+      <div class="box treatment">
+         <img src="images/icon-odontopediatria.svg" alt="Odontopediatría - dentista para niños en Lima">
+         <h3>Odontopediatría</h3>
+         <p>Atención dental para niños en un ambiente amigable y sin miedo. Primera visita pensada para que salgan sonriendo.</p>
+         <a class="link-btn btn-card" target="_blank" rel="noopener"
+            href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20quiero%20una%20cita%20de%20odontopediatr%C3%ADa%20para%20mi%20hijo/a">
+            <i class="fa-brands fa-whatsapp"></i> Cita para mi hijo/a
+         </a>
+      </div>
+
+      <div class="box treatment">
+         <img src="images/icon-diseno.svg" alt="Diseño de sonrisa y carillas en Lima">
+         <h3>Diseño de sonrisa</h3>
+         <p>Carillas y estética dental planificadas digitalmente: ve tu nueva sonrisa en 3D antes de empezar el tratamiento.</p>
+         <a class="link-btn btn-card" target="_blank" rel="noopener"
+            href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20dise%C3%B1o%20de%20sonrisa">
+            <i class="fa-brands fa-whatsapp"></i> Ver mi sonrisa en 3D
+         </a>
+      </div>
+
+      <div class="box treatment">
+         <img src="images/icon-rehabilitacion.svg" alt="Rehabilitación oral en Lima">
+         <h3>Rehabilitación oral</h3>
+         <p>Recuperamos la función y estética de tu boca con coronas, puentes y prótesis de última generación.</p>
+         <a class="link-btn btn-card" target="_blank" rel="noopener"
+            href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20rehabilitaci%C3%B3n%20oral">
+            <i class="fa-brands fa-whatsapp"></i> Solicitar evaluación
+         </a>
       </div>
 
    </div>
-
 </section>
 
-<!-- about section ends -->
+<!-- ============ POR QUÉ ELEGIRNOS ============ -->
+<section class="whyus" id="porque">
+   <h2 class="heading">¿Por qué Digital Smiles?</h2>
+   <div class="box-container container whyus-grid">
+      <div class="why-item">
+         <i class="fas fa-cube"></i>
+         <h3>Tecnología digital real</h3>
+         <p>Escáner intraoral 3D, planificación digital y radiografías en sede. Sin moldes incómodos.</p>
+      </div>
+      <div class="why-item">
+         <i class="fas fa-user-md"></i>
+         <h3>Especialistas certificados</h3>
+         <p>Equipo dirigido por la Dra. Milagros López, con especialistas por cada área de tratamiento.</p>
+      </div>
+      <div class="why-item">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>Cerca de ti</h3>
+         <p>3 sedes en Surco, Miraflores y San Borja, con atención de lunes a sábado hasta las 8 pm.</p>
+      </div>
+      <div class="why-item">
+         <i class="fas fa-credit-card"></i>
+         <h3>Pagos flexibles</h3>
+         <p>Planes en cuotas y todas las tarjetas. Tu tratamiento no tiene por qué esperar.</p>
+      </div>
+   </div>
+</section>
 
-<!-- services section starts  -->
-
-
-
-<!-- services section ends -->
-
-<!-- process section starts  -->
-
-
-<!-- process section ends -->
-
-<!-- reviews section starts  -->
+<!-- ============ TESTIMONIOS ============ -->
 <section class="services" id="testimonios">
-
-   <h1 class="heading">TESTIMONIOS</h1>
+   <h2 class="heading">Testimonios reales</h2>
+   <p class="section-sub">Historias de pacientes que ya transformaron su sonrisa con nosotros.</p>
 
    <div class="box-container container">
 
       <div class="box">
          <h3>Ortodoncia</h3>
-         <p>✨ “Una nueva sonrisa, una nueva etapa. Verlos cumplir sus objetivos nos llena de orgullo.”</p>
-         <video width="240" height="448" controls><source src="images/video-parte2.mp4" type="video/mp4"></video>
+         <p>✨ "Una nueva sonrisa, una nueva etapa. Verlos cumplir sus objetivos nos llena de orgullo."</p>
+         <video width="240" height="448" controls preload="none"><source src="images/video-parte2.mp4" type="video/mp4"></video>
       </div>
 
       <div class="box">
          <h3>Corrección ATM</h3>
-         <p>✨ “La ortodoncia no solo transforma sonrisas, transforma vidas.”</p>
-         <video width="240" height="448" controls><source src="images/video-parte3.mp4" type="video/mp4"></video>
+         <p>✨ "La ortodoncia no solo transforma sonrisas, transforma vidas."</p>
+         <video width="240" height="448" controls preload="none"><source src="images/video-parte3.mp4" type="video/mp4"></video>
       </div>
 
       <div class="box">
          <h3>Ortodoncia</h3>
-         <p>✨ “Cada testimonio es una historia de confianza, cambios y metas alcanzadas.”</p>
-         <video width="240" height="448" controls><source src="images/f1.mp4" type="video/mp4"></video>
+         <p>✨ "Cada testimonio es una historia de confianza, cambios y metas alcanzadas."</p>
+         <video width="240" height="448" controls preload="none"><source src="images/f1.mp4" type="video/mp4"></video>
       </div>
 
       <div class="box">
          <h3>Ortodoncia</h3>
-         <p>🌟 “Más que estética… es funcionalidad, seguridad y felicidad reflejada en su sonrisa.”</p>
-         <video width="240" height="448" controls><source src="images/f2.mp4" type="video/mp4"></video>
+         <p>🌟 "Más que estética… es funcionalidad, seguridad y felicidad reflejada en su sonrisa."</p>
+         <video width="240" height="448" controls preload="none"><source src="images/f2.mp4" type="video/mp4"></video>
       </div>
 
       <div class="box">
          <h3>Ortodoncia</h3>
-         <p>🌟 “Sus sonrisas hoy cuentan una historia de esfuerzo, constancia y transformación.”</p>
-         <video width="240" height="448" controls><source src="images/f3.mp4" type="video/mp4"></video>
+         <p>🌟 "Sus sonrisas hoy cuentan una historia de esfuerzo, constancia y transformación."</p>
+         <video width="240" height="448" controls preload="none"><source src="images/f3.mp4" type="video/mp4"></video>
       </div>
 
       <div class="box">
          <h3>Ortodoncia</h3>
-         <p>🌟 “Cuando una sonrisa cambia, todo cambia: seguridad, autoestima y felicidad.”</p>
-         <video width="240" height="448" controls><source src="images/f4.mp4" type="video/mp4"></video>
+         <p>🌟 "Cuando una sonrisa cambia, todo cambia: seguridad, autoestima y felicidad."</p>
+         <video width="240" height="448" controls preload="none"><source src="images/f4.mp4" type="video/mp4"></video>
+      </div>
+      <div class="box">
+         <h3>Diseño Sonrisa Digital</h3>
+         <p>🌟 "Mi sonrisa cambió por completo, ¡quedé encantada!"</p>
+         <video width="240" height="448" controls preload="none"><source src="images/d1.mp4" type="video/mp4"></video>
+      </div>
+
+      <div class="box">
+         <h3>Diseño Sonrisa Digital</h3>
+         <p>🌟 “Ahora sonrío con mucha más confianza.”</p>
+         <video width="240" height="448" controls preload="none"><source src="images/d2.mp4" type="video/mp4"></video>
+      </div>
+
+      <div class="box">
+         <h3>Diseño Sonrisa Digital</h3>
+         <p>🌟 “El resultado fue natural y superó mis expectativas.”</p>
+         <video width="240" height="448" controls preload="none"><source src="images/d3.mp4" type="video/mp4"></video>
+      </div>
+
+   </div>
+</section>
+
+
+<!-- ============ RESEÑAS DE GOOGLE ============ -->
+<section class="greviews" id="resenas">
+   <h2 class="heading">Lo que dicen nuestros pacientes</h2>
+
+   <div class="greviews-summary">
+      <span class="greviews-score">4.9</span>
+      <div class="greviews-meta">
+         <span class="stars-gold stars-lg" aria-hidden="true">★★★★★</span>
+         <span>Basado en <strong>+400 reseñas</strong> en Google</span>
       </div>
    </div>
 
+   <div class="box-container container greviews-grid">
+
+      <div class="review-card">
+         <div class="review-head">
+            <span class="review-avatar">A</span>
+            <div>
+               <span class="review-name">Paciente de Google</span>
+               <span class="stars-gold" aria-hidden="true">★★★★★</span>
+            </div>
+            <i class="fa-brands fa-google review-g" aria-hidden="true"></i>
+         </div>
+         <p>"La Dra. Audri me atendió con mucha dedicación y delicadeza, y me explicó todo el proceso. ¡Con ella perdí el miedo al dentista! 100% recomendado."</p>
+         <span class="review-sede">Sede Surco</span>
+      </div>
+
+      <div class="review-card">
+         <div class="review-head">
+            <span class="review-avatar">M</span>
+            <div>
+               <span class="review-name">Paciente de Google</span>
+               <span class="stars-gold" aria-hidden="true">★★★★★</span>
+            </div>
+            <i class="fa-brands fa-google review-g" aria-hidden="true"></i>
+         </div>
+         <p>"Muy buena experiencia con mi tratamiento de brackets. Siempre me explican cómo va el avance y qué sigue. Atención profesional y amable a la vez."</p>
+         <span class="review-sede">Sede Miraflores</span>
+      </div>
+
+      <div class="review-card">
+         <div class="review-head">
+            <span class="review-avatar">J</span>
+            <div>
+               <span class="review-name">Paciente de Google</span>
+               <span class="stars-gold" aria-hidden="true">★★★★★</span>
+            </div>
+            <i class="fa-brands fa-google review-g" aria-hidden="true"></i>
+         </div>
+         <p>"Clínica muy moderna, con tecnología avanzada e instalaciones impecables. El proceso fue rápido y con excelente relación calidad-precio."</p>
+         <span class="review-sede">Sede San Borja</span>
+      </div>
+
+      <div class="review-card">
+         <div class="review-head">
+            <span class="review-avatar">C</span>
+            <div>
+               <span class="review-name">Paciente de Google</span>
+               <span class="stars-gold" aria-hidden="true">★★★★★</span>
+            </div>
+            <i class="fa-brands fa-google review-g" aria-hidden="true"></i>
+         </div>
+         <p>"Excelente servicio. Me explicaron cada paso con mucha paciencia, lo que me dio muchísima confianza. Totalmente recomendado."</p>
+         <span class="review-sede">Sede Surco</span>
+      </div>
+
+      <div class="review-card">
+         <div class="review-head">
+            <span class="review-avatar">L</span>
+            <div>
+               <span class="review-name">Paciente de Google</span>
+               <span class="stars-gold" aria-hidden="true">★★★★★</span>
+            </div>
+            <i class="fa-brands fa-google review-g" aria-hidden="true"></i>
+         </div>
+         <p>"El personal es excelente: te explican todo con claridad y te ayudan a superar el miedo. La sala de espera es muy acogedora."</p>
+         <span class="review-sede">Sede Miraflores</span>
+      </div>
+
+      <div class="review-card">
+         <div class="review-head">
+            <span class="review-avatar">R</span>
+            <div>
+               <span class="review-name">Paciente de Google</span>
+               <span class="stars-gold" aria-hidden="true">★★★★★</span>
+            </div>
+            <i class="fa-brands fa-google review-g" aria-hidden="true"></i>
+         </div>
+         <p>"La Dra. Seminario es muy amable y paciente, explica todo el proceso al detalle. ¡Excelente profesional!"</p>
+         <span class="review-sede">Sede San Borja</span>
+      </div>
+
+   </div>
+
+   <div class="text-center mt-4">
+      <a class="link-btn btn-outline" target="_blank" rel="noopener"
+         href="https://search.google.com/local/reviews?placeid=ChIJ17Zhm_zHBZER_4MzYFEKizU">
+         Ver todas las reseñas en Google
+      </a>
+   </div>
 </section>
 
+<!-- ============ SEDES ============ -->
 <section id="sedes" class="section" aria-labelledby="loc-title">
-  <div class="container">
+   <div class="container">
+      <h2 class="heading" id="loc-title">Nuestras sedes en Lima</h2>
+      <p class="section-sub">Encuentra tu dentista cerca de ti: Surco, Miraflores y San Borja.</p>
 
-   <h1 class="heading">SEDES</h1>
+      <div class="row gy-5">
 
-    <div class="row gy-5">
-      <!-- SURCO -->
-      <div class="col-md-6">
-        <div class="sede-card">
-          <span class="section-title">Sede Surco</span>
-          <h3 class="mb-2">DIGITAL SMILES – Surco</h3>
-          <p class="lead mb-1"><strong>Av. Alfredo Benavides 3746 – 2do Piso</strong></p>
-          <p class="mb-3">Cerca al óvalo Higuereta y frente a la SUNARP.</p>
+         <!-- SURCO -->
+         <div class="col-md-4" id="sede-surco">
+            <div class="sede-card">
+               <span class="section-title">Dentista en Surco</span>
+               <h3 class="mb-2">Digital Smiles – Surco</h3>
+               <a class="rating-row" target="_blank" rel="noopener"
+                  href="https://search.google.com/local/reviews?placeid=ChIJ17Zhm_zHBZER_4MzYFEKizU">
+                  <span class="stars-gold" aria-hidden="true">★★★★★</span>
+                  <span><strong>4.9</strong> · 246 reseñas en Google</span>
+               </a>
+               <p class="lead mb-1"><strong>Av. Alfredo Benavides 3746 – 2do Piso</strong></p>
+               <p class="mb-3">Frente a SUNARP, a pasos del óvalo Higuereta.</p>
 
-          <div class="d-flex flex-wrap gap-12 mb-3">
-            <a class="link-btn"
-               href="https://api.whatsapp.com/send?phone=51973759251&text=Hola,%20vengo%20de%20la%20web,%20me%20gustar%C3%ADa%20reservar%20una%20cita."
-               target="_blank" rel="noopener">
-              Reservar cita
-            </a>
-            <a class="link-btn" style="background:#10b981"
-               href="tel:+51973759251">
-              Llamar
-            </a>
-            <a class="link-btn" style="background:#334155"
-               href="https://maps.app.goo.gl/tRyKtqHww52iTp2p9"
-               target="_blank" rel="noopener">
-              Abrir en Maps
-            </a>
-          </div>
+               <div class="d-flex flex-wrap gap-12 mb-3">
+                  <a class="link-btn" target="_blank" rel="noopener"
+                     href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20vengo%20de%20la%20web%20y%20quiero%20una%20cita%20en%20la%20sede%20Surco">
+                     Reservar en Surco
+                  </a>
+                  <a class="link-btn btn-call" href="tel:+51960116876">Llamar</a>
+                  <a class="link-btn btn-maps" target="_blank" rel="noopener"
+                     href="https://maps.app.goo.gl/tRyKtqHww52iTp2p9">Cómo llegar</a>
+               </div>
 
-          <div class="map-wrap">
-            <iframe class="map-embed" loading="lazy"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.373135709512!2d-76.99724771886765!3d-12.129505105830564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7fc9b61b6d7%3A0x358b0a51603383ff!2sDIGITAL%20SMILES!5e0!3m2!1ses-419!2spe!4v1724229569457!5m2!1ses-419!2spe"
-              allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Mapa Digital Smiles Surco"></iframe>
-          </div>
-        </div>
+               <div class="map-wrap">
+                  <iframe class="map-embed" loading="lazy"
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.373135709512!2d-76.99724771886765!3d-12.129505105830564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7fc9b61b6d7%3A0x358b0a51603383ff!2sDIGITAL%20SMILES!5e0!3m2!1ses-419!2spe!4v1724229569457!5m2!1ses-419!2spe"
+                     allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+                     title="Mapa Digital Smiles Surco"></iframe>
+               </div>
+            </div>
+         </div>
+
+         <!-- MIRAFLORES -->
+         <div class="col-md-4" id="sede-miraflores">
+            <div class="sede-card">
+               <span class="section-title">Dentista en Miraflores</span>
+               <h3 class="mb-2">Digital Smiles – Miraflores</h3>
+               <a class="rating-row" target="_blank" rel="noopener"
+                  href="https://search.google.com/local/reviews?placeid=ChIJezyUfADJBZER_whRQnmHGSc">
+                  <span class="stars-gold" aria-hidden="true">★★★★★</span>
+                  <span><strong>4.9</strong> · 137 reseñas en Google</span>
+               </a>
+               <p class="lead mb-1"><strong>Av. Reducto 929, Miraflores</strong></p>
+               <p class="mb-3">Cruce con 28 de Julio, a 1 cuadra de la estación 28 de Julio del Metropolitano.</p>
+
+               <div class="d-flex flex-wrap gap-12 mb-3">
+                  <a class="link-btn" target="_blank" rel="noopener"
+                     href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20vengo%20de%20la%20web%20y%20quiero%20una%20cita%20en%20la%20sede%20Miraflores">
+                     Reservar en Miraflores
+                  </a>
+                  <a class="link-btn btn-call" href="tel:+51960116876">Llamar</a>
+                  <a class="link-btn btn-maps" target="_blank" rel="noopener"
+                     href="https://maps.app.goo.gl/m5cgfzR2i5LSTpap7">Cómo llegar</a>
+               </div>
+
+               <div class="map-wrap">
+                  <iframe class="map-embed" loading="lazy"
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.768442757697!2d-77.02640642475579!3d-12.12798974341875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9007c943c7b%3A0x27198779425108ff!2sDigital%20Smiles%20sede%20Miraflores!5e0!3m2!1ses-419!2spe!4v1760661500322!5m2!1ses-419!2spe"
+                     allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+                     title="Mapa Digital Smiles Miraflores"></iframe>
+               </div>
+            </div>
+         </div>
+
+         <!-- SAN BORJA -->
+         <div class="col-md-4" id="sede-sanborja">
+            <div class="sede-card">
+               <span class="section-title">Dentista en San Borja</span>
+               <h3 class="mb-2">Digital Smiles – San Borja</h3>
+               <a class="rating-row" target="_blank" rel="noopener"
+                  href="https://search.google.com/local/reviews?placeid=ChIJG2-358PHBZERIcO_cA3jXIc">
+                  <span class="stars-gold" aria-hidden="true">★★★★★</span>
+                  <span><strong>5.0</strong> · 30 reseñas en Google</span>
+               </a>
+               <p class="lead mb-1"><strong>Av. Primavera 939, San Borja</strong></p>
+               <p class="mb-3">Frente a Toulouse Lautrec, zona Chacarilla.</p>
+
+               <div class="d-flex flex-wrap gap-12 mb-3">
+                  <a class="link-btn" target="_blank" rel="noopener"
+                     href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20vengo%20de%20la%20web%20y%20quiero%20una%20cita%20en%20la%20sede%20San%20Borja">
+                     Reservar en San Borja
+                  </a>
+                  <a class="link-btn btn-call" href="tel:+51960116876">Llamar</a>
+                  <a class="link-btn btn-maps" target="_blank" rel="noopener"
+                     href="https://www.google.com/maps/search/?api=1&query=Digital%20Smiles%20sede%20San%20Borja&query_place_id=ChIJG2-358PHBZERIcO_cA3jXIc">Cómo llegar</a>
+               </div>
+
+               <div class="map-wrap">
+                  <iframe class="map-embed" loading="lazy"
+                     src="https://www.google.com/maps?q=Digital+Smiles+sede+San+Borja,+Av.+Primavera+939,+San+Borja,+Lima&output=embed"
+                     allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+                     title="Mapa Digital Smiles San Borja"></iframe>
+               </div>
+            </div>
+         </div>
+
       </div>
-
-      <!-- MIRAFLORES -->
-      <div class="col-md-6">
-        <div class="sede-card">
-          <span class="section-title">Sede Miraflores</span>
-          <h3 class="mb-2">DIGITAL SMILES – Miraflores</h3>
-          <p class="lead mb-1"><strong>Av. Reducto 929, Miraflores</strong></p>
-          <p class="mb-3">A 1 cuadra de la estación 28 de Julio del Metropolitano.</p>
-
-          <div class="d-flex flex-wrap gap-12 mb-3">
-            <a class="link-btn"
-               href="https://api.whatsapp.com/send?phone=51973759251&text=Hola,%20vengo%20de%20la%20web,%20quiero%20una%20cita%20en%20Miraflores."
-               target="_blank" rel="noopener">
-              Reservar cita
-            </a>
-            <a class="link-btn" style="background:#10b981"
-               href="tel:+51973759251">
-              Llamar
-            </a>
-            <a class="link-btn" style="background:#334155"
-               href="https://maps.app.goo.gl/m5cgfzR2i5LSTpap7"
-               target="_blank" rel="noopener">
-              Abrir en Maps
-            </a>
-          </div>
-
-          <div class="map-wrap">
-            <iframe class="map-embed" loading="lazy"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.768442757697!2d-77.02640642475579!3d-12.12798974341875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9007c943c7b%3A0x27198779425108ff!2sDigital%20Smiles%20sede%20Miraflores!5e0!3m2!1ses-419!2spe!4v1760661500322!5m2!1ses-419!2spe"
-              allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Mapa Digital Smiles Miraflores"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+   </div>
 </section>
 
+<!-- ============ NOSOTROS / EQUIPO ============ -->
+<section class="about" id="about">
+   <div class="container">
+      <div class="row align-items-center">
 
-<section class="services" id="services">
+         <div class="col-md-6">
+            <div class="team-photo-wrap">
+               <img src="images/equipo.jpg" class="team-photo" alt="Equipo de doctores de Digital Smiles - Sedes Surco, Miraflores y San Borja">
+               <div class="team-badge">
+                  <span class="stars-gold" aria-hidden="true">★</span>
+                  <strong>4.9</strong> en Google
+               </div>
+            </div>
+         </div>
 
-   <h1 class="heading">ESPECIALIDADES</h1>
+         <div class="col-md-6 content mt-5 mt-md-0">
+            <span>Nuestro equipo</span>
+            <h3>Un solo equipo, tres sedes, la misma calidad</h3>
+            <p>Somos un equipo de especialistas en ortodoncia, estética, implantes, endodoncia y odontopediatría, unidos por una misma forma de trabajar: escucharte primero, planificar tu tratamiento con tecnología digital 3D y acompañarte en cada paso hasta lograr la sonrisa que buscas.</p>
 
-   <div class="box-container container">
+            <div class="about-stats">
+               <div class="stat"><strong>3</strong><span>sedes en Lima</span></div>
+               <div class="stat"><strong>4.9★</strong><span>en Google</span></div>
+               <div class="stat"><strong>+400</strong><span>reseñas</span></div>
+               <div class="stat"><strong>+1,000</strong><span>pacientes</span></div>
+            </div>
 
-      <div class="box">
-         
-         <img src="images/icon-1.svg"  alt="">
-         <h3>Ortodoncia Invisible</h3>
-         <p></p>
+            <blockquote class="about-quote">
+               "Nuestra misión es que cada visita se convierta en una experiencia que te haga sonreír."
+               <cite>Dra. Milagros López Espinoza — Directora Clínica, Digital Smiles - Especialista en Ortodoncia y ortopedia maxilar
+               RNE: 6021</cite>
+            </blockquote>
+
+            <a href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20vengo%20de%20la%20web%20y%20quiero%20reservar%20una%20cita"
+               class="link-btn btn-whatsapp" target="_blank" rel="noopener">
+               <i class="fa-brands fa-whatsapp"></i> Reserva tu cita
+            </a>
+         </div>
+
       </div>
+   </div>
+</section>
 
-      <div class="box">
-         <img src="images/icon-2.svg" alt="">
-         <h3>Estética</h3>
-      </div>
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+   <h2 class="heading">Preguntas frecuentes</h2>
+   <div class="container faq-container">
 
-      <div class="box">
-         <img src="images/icon-3.svg" alt="">
-         <h3>Ortodoncia</h3>
-      </div>
+      <details class="faq-item">
+         <summary>¿Cuánto cuesta la ortodoncia o los brackets?</summary>
+         <p>El costo depende del tipo de brackets (metálicos, estéticos o autoligables) y de la complejidad de tu caso. En la evaluación con escáner 3D te damos un plan y presupuesto exacto. <a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20quiero%20saber%20el%20precio%20de%20la%20ortodoncia">Cotiza por WhatsApp →</a></p>
+      </details>
 
-      <div class="box">
-         <img src="images/icon-4.svg" alt="">
-         <h3>Estética</h3>
-      </div>
+      <details class="faq-item">
+         <summary>¿La primera evaluación tiene costo?</summary>
+         <p>Escríbenos por WhatsApp y te contamos las promociones vigentes de evaluación y diagnóstico digital en tu sede más cercana.</p>
+      </details>
 
-      <div class="box">
-         <img src="images/icon-5.svg" alt="">
-         <h3>Implantología</h3>
-      </div>
+      <details class="faq-item">
+         <summary>¿Los alineadores invisibles funcionan igual que los brackets?</summary>
+         <p>Sí, en la mayoría de los casos logran los mismos resultados, con la ventaja de ser removibles y prácticamente invisibles. En tu evaluación te decimos si eres candidato.</p>
+      </details>
 
-      <div class="box">
-         <img src="images/icon-6.svg" alt="">
-         <h3>Rehabilitación</h3>
-      </div>
+      <details class="faq-item">
+         <summary>¿Puedo pagar en cuotas?</summary>
+         <p>Sí. Ofrecemos planes de pago flexibles y aceptamos todas las tarjetas para que empieces tu tratamiento sin esperar.</p>
+      </details>
+
+      <details class="faq-item">
+         <summary>¿Atienden a niños?</summary>
+         <p>Sí, contamos con odontopediatría en un ambiente amigable, pensado para que la primera visita de tu hijo sea una buena experiencia.</p>
+      </details>
+
+      <details class="faq-item">
+         <summary>¿Atienden urgencias dentales?</summary>
+         <p>Sí. Si tienes dolor o una urgencia, escríbenos por WhatsApp y te asignamos la cita más próxima disponible en Surco, Miraflores o San Borja.</p>
+      </details>
 
    </div>
-
 </section>
-<!-- reviews section ends -->
 
-<!-- contact section starts  -->
+<!-- ============ CTA FINAL ============ -->
+<section class="cta-final">
+   <div class="container text-center">
+      <h2>Tu nueva sonrisa empieza con un mensaje</h2>
+      <p>Escríbenos por WhatsApp, cuéntanos qué necesitas y te damos cita en la sede más cercana a ti: Surco, Miraflores o San Borja.</p>
+      <a href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20vengo%20de%20la%20web%20y%20quiero%20agendar%20mi%20cita%20%F0%9F%98%8A"
+         class="link-btn btn-whatsapp btn-big" target="_blank" rel="noopener">
+         <i class="fa-brands fa-whatsapp"></i> Agendar mi cita por WhatsApp
+      </a>
+   </div>
+</section>
 
-<!-- contact section ends -->
-
-<!-- footer section starts  -->
-
-<section class="footer" id="process">
-
+<!-- ============ FOOTER ============ -->
+<section class="footer" id="contacto">
    <div class="box-container container">
 
       <div class="box">
          <i class="fa-brands fa-whatsapp"></i>
-         <h3>Celular </h3>
-         <p>932335257</p>
-
+         <h3>WhatsApp</h3>
+         <p>932 335 257</p>
       </div>
 
       <div class="box">
          <i class="fas fa-map-marker-alt"></i>
-         <h3>Dirección</h3>
-         <p>Miraflores Av Reducto 929</p></a>
-         <p>Surco: Av. Benavides 3746</p></a>
-         
+         <h3>Sedes</h3>
+         <p>Surco: Av. Benavides 3746, 2do piso</p>
+         <p>Miraflores: Av. Reducto 929</p>
+         <p>San Borja: Av. Primavera 939</p>
       </div>
 
       <div class="box">
          <i class="fas fa-clock"></i>
          <h3>Horario de atención</h3>
-         <p>Lunes a Sabado de 10:00am a 08:00pm</p>
+         <p>Lunes a sábado de 10:00 am a 8:00 pm</p>
       </div>
 
       <div class="box">
          <i class="fa-brands fa-tiktok"></i>
-         <h3>Tik Tok</h3>
-         <a href="https://www.tiktok.com/@dramilagroslopez"><p>@dramilagroslopez</p></a>
-
+         <h3>TikTok</h3>
+         <a href="https://www.tiktok.com/@dramilagroslopez" target="_blank" rel="noopener"><p>@dramilagroslopez</p></a>
+         <a href="https://www.tiktok.com/@digitalsmiles8" target="_blank" rel="noopener"><p>@digitalsmiles8</p></a>
       </div>
-      <div class="box">
-         <i class="fa-brands fa-tiktok"></i>
-         <h3>Tik Tok</h3>
-         <a href="https://www.tiktok.com/@digitalsmiles8"><p>@digitalsmiles8</p></a>
 
-      </div>
       <div class="box">
          <i class="fa-brands fa-instagram"></i>
          <h3>Instagram</h3>
-         <a href="https://www.instagram.com/digitalsmiles.pe/"><p>@digitalsmiles.pe</p></a>
-
+         <a href="https://www.instagram.com/digitalsmiles.pe/" target="_blank" rel="noopener"><p>@digitalsmiles.pe</p></a>
       </div>
+
       <div class="box">
          <i class="fas fa-envelope"></i>
          <h3>Email</h3>
          <p>digitalsmiles366@gmail.com</p>
-
       </div>
+
    </div>
 
-   <div class="credit"> &copy;2024 <?php echo date('Y'); ?> <span>DigitalSmiles</span> All Reserved Rights </div>
-
+   <div class="credit">&copy; <span id="year"></span> <span>Digital Smiles</span> — Todos los derechos reservados</div>
 </section>
 
-<!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
+<!-- JS -->
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="js/script.js"></script>
 
 </body>
 </html>
-
