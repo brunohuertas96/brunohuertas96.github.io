@@ -1053,3 +1053,54 @@ section{
 @media (max-width:450px){
    .header-phone small{ display:none; }
 }
+
+/* ============ Ajustes móviles del header y zonas táctiles ============ */
+@media (max-width:768px){
+
+   /* Logo más compacto: el header baja de ~107px a ~80px */
+   .header .logo img{
+      width:105px;
+      height:70px;
+   }
+
+   .header .row{
+      flex-wrap:nowrap;
+   }
+
+   /* Zona táctil amplia para el número de WhatsApp (mín. 44px) */
+   .header-phone{
+      padding:1.2rem 0.4rem;
+      min-height:44px;
+   }
+
+   /* Botones de tarjetas más fáciles de tocar */
+   .btn-card{
+      padding:1.2rem 2rem;
+      width:100%;
+      justify-content:center;
+      min-height:44px;
+   }
+
+   .sede-card .link-btn,
+   .home .link-btn{
+      min-height:44px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+   }
+
+   /* Botones de sede a ancho cómodo */
+   .sede-card .link-btn{
+      padding:1.1rem 1.6rem;
+   }
+
+   /* Botones del hero con altura táctil */
+   .home .link-btn{
+      padding:1.2rem 2.2rem;
+   }
+}
+
+/* Fondo alternado tras el reordenamiento de secciones */
+#sedes{
+   background-color: var(--light-bg);
+}
