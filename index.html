@@ -130,6 +130,10 @@
             <a href="#tratamientos">Tratamientos</a>
             <a href="#testimonios">Testimonios</a>
             <a href="#faq">Preguntas</a>
+            <a href="https://api.whatsapp.com/send?phone=51960116876&text=Hola,%20vengo%20de%20la%20web%20y%20quiero%20reservar%20una%20cita%20%F0%9F%98%8A"
+               class="nav-cta" target="_blank" rel="noopener">
+               <i class="fa-brands fa-whatsapp"></i> Reservar cita
+            </a>
          </nav>
 
          <div class="header-cta">
@@ -768,7 +772,12 @@
 </section>
 
 <!-- JS -->
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+window.addEventListener('scroll', () => {
+   document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 10);
+});
+</script>
 <script src="js/script.js"></script>
 
 </body>
